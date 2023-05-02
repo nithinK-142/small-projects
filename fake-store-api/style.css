@@ -1,0 +1,12 @@
+h1 {
+        text-align: center; /* Centers the text */
+        font-size: 4rem; /* Increases the font size */
+        color: #1a1a1a; /* Changes the font color */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle text shadow */
+        letter-spacing: 2px; /* Increases the space between letters */
+        margin-top: 2rem; /* Adds some margin at the top */
+      }
+      
+img{  
+		width: 100px 
+}
