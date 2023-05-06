@@ -1,6 +1,6 @@
 # Fake Store API
 
-This project displays data obtained from the [Fake Store API](https://fakestoreapi.com/) in an HTML table using Bootstrap, CSS, and JavaScript. The table displays information about products. 
+This project displays data obtained from the fake store api in an HTML table using Bootstrap, CSS, and JavaScript. The table displays information about products. 
 
 ## Getting Started
 
