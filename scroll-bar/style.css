@@ -15,7 +15,7 @@ body {
 
 .scroll-progress {
     position: fixed;
-    background-color: blue;
+    background-color: rgb(232, 230, 227) !important;
 }
 
 /* .leftToRight, .rightToLeft{

@@ -1,3 +1,8 @@
+//code for blocking dark-reader extension
+const lock = document.createElement('meta');
+lock.name = 'darkreader-lock';
+document.head.appendChild(lock);
+
 // Get the progress bar elements
 const scrollBar1 = document.querySelector('.leftToRight');
 const scrollBar2 = document.querySelector('.rightToLeft');
@@ -23,4 +28,5 @@ window.addEventListener('scroll', () => {
   // Update the height of progress bars
   scrollBar3.style.height = progress + '%';
   scrollBar4.style.height = progress + '%';
+
 });
