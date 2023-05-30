@@ -1,2 +1,2 @@
 # scroll-bar
-A fixed scroll progress bar that shows when scrolled.
+Dynamic scroll progress bars that appears as you scroll down the page, indicating your progress.
