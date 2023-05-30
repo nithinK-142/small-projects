@@ -1,63 +1,132 @@
-html, body{
+html, body {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
 }
-body{
+
+body {
     width: 100%;
 }
-.scroll-progress{
-    width: 0;
-    background-color: #d6d6d6;
-    height: 3px;
+
+/* Hide browser's scroll bar. */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scroll-progress {
     position: fixed;
+    background-color: blue;
+}
+
+/* .leftToRight, .rightToLeft{
+    width: 0;
+} */
+
+/* Top Left to Top Right */
+.leftToRight {
+    height: 2px;
     top: 0;
     left: 0;
-
 }
-section{
+
+/* Bottom Right to Bottom Left */
+.rightToLeft {
+    height: 3px;
+    bottom: 0;
+    right: 0;
+}
+
+/* .topToBottom, .bottomToTop{
+    height: 0;
+} */
+
+/* Top Left to Bottom Left */
+.topToBottom {
+    width: 4px;
+    top: 0;
+    right: 0;
+}
+
+/* Bottom Left to Top Left */
+.bottomToTop {
+    bottom: 0;
+    left: 0;
+    width:2px;
+}
+
+/* Section */
+section {
     width: 100%;
     height: 100vh;
+    color: white;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .section-1 {
-    background-color: #1B2631;
-}
-.section-2 {
-    background-color: #405656;
-}
-.section-3 {
-    background-color: #424949;
-}
-.section-4 {
-    background-color: #626567;
-}
-.section-5 {
-    background-color: #8e8a8a;
+    background-color: rgb(72, 78, 81);
+    /* background-color: #1B2631; */
 }
 
+.section-2 {
+    background-color: rgb(62, 68, 70);
+    /* background-color: #405656; */
+}
+
+.section-3 {
+    background-color: rgb(53, 57, 59);
+    /* background-color: #424949; */
+}
+
+.section-4 {
+    background-color: rgb(43, 47, 49);
+    /* background-color: #626567; */
+}
+
+.section-5 {
+    background-color: rgb(34, 36, 38);
+    /* background-color: #8e8a8a; */
+}
+
+/* footer */
 footer {
-    background-color: #130f40;
+    background-color: rgb(34, 36, 38);
     color: #fff;
     font-size: 14px;
     text-align: center;
-    height: 25px;
+    padding: 16px;
 }
-  
-  footer p {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida  Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      margin: 0;
-  }
 
-  footer a {
-      color: #bf1e1e;
-      text-decoration: none;
-      font-size: 15px;
-  }
+footer p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+footer a {
+    color: #bf1e1e;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* Browser's scroll bar customization
+::-webkit-scrollbar {
+    width: 5px; 
+    background-color: #202324 !important;
+}
+
+::-webkit-scrollbar-track {
+    margin-top: 760px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+} */
