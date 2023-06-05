@@ -9,5 +9,5 @@ This function secures a given password by replacing certain characters with spec
 
 ## generate_password()
 
-This function generates a random password based on user input. The user is prompted to enter a desired password length, and the function generates a password of that length using a set of characters. The character set includes digits, lowercase letters, uppercase letters, and special symbols. 
+This function generates a random password based on user input. The user is prompted to enter a desired password length, and the function generates a password of that length using a set of characters. The character set includes digits, lowercase letters, uppercase letters, and special symbols.
 
