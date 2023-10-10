@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://github.com/nithinK-142/nithin.me/assets/60612488/e3710daa-4882-44bf-b281-df3711790add"
+        type="image/x-icon">
+    <title>Grid</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+            font-family: monospace;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 70vw;
+            height: 80vh;
+            padding: 4px;
+            border-radius: 8px;
+            background-color: #06070E;
+            border: 1px solid white;
+            margin-inline: auto;
+
+            display: grid;
+            gap: 4px;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: 1fr;
+        }
+
+        .item {
+            background-color: salmon;
+            border-radius: 8px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: xx-large;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: repeat(5, 1fr);
+            }
+
+            .header,
+            .footer {
+                grid-column: 1/4;
+            }
+
+            .sidebar,
+            .content1 {
+                grid-column: 1/4;
+            }
+
+            .content2 {
+                grid-column: 1/2;
+            }
+
+            .content3 {
+                grid-column: 2/4;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .sidebar {
+                grid-row: 2/4;
+                grid-column: 1/2;
+            }
+
+            .content1 {
+                grid-column: 2/4;
+            }
+
+            .content2 {
+                grid-column: 2/3;
+            }
+
+            .content3 {
+                grid-column: 3/4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid Layout</h1>
+    <div class="container">
+        <div class="item header">
+            <p>Header</p>
+        </div>
+        <div class="item sidebar">
+            <p>Sidebar</p>
+        </div>
+        <div class="item content1">
+            <p>Content1</p>
+        </div>
+        <div class="item content2">
+            <p>Content2</p>
+        </div>
+        <div class="item content3">
+            <p>Content3</p>
+        </div>
+        <div class="item footer">
+            <p>Footer</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
