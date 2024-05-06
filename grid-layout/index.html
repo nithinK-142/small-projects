@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="darkreader-lock"></meta>
+    <meta name="darkreader-lock">
+    </meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon"
         href="https://github.com/nithinK-142/nithin.me/assets/60612488/e3710daa-4882-44bf-b281-df3711790add"
@@ -14,10 +15,22 @@
             background-color: #212121;
             color: white;
             font-family: monospace;
+            position: relative;
         }
 
         h1 {
             text-align: center;
+        }
+
+        .link {
+            position: absolute;
+            right: 2rem;
+
+            & a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
         }
 
         .container {
@@ -100,6 +113,7 @@
 </head>
 
 <body>
+    <div class="link"><a href="./subgrid.html">SubGrid</a></div>
     <h1>Grid Layout</h1>
     <div class="container">
         <div class="item header">
