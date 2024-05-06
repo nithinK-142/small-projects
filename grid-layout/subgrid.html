@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubGrid</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: system-ui;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .wrapper-normal {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .box-normal {
+            border: 2px solid #ccc;
+        }
+
+
+        .wrapper-subgrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .box-subgrid {
+            border: 2px solid #ccc;
+            display: grid;
+            grid-template-rows: subgrid;
+            grid-row: span 3;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="wrapper-normal">
+    <div class="box-normal">
+        <h2>Normal Grid</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, quisquam beatae tempore repellat sapiente
+            eaque est vero nam mollitia aperiam fugiat! Perspiciatis doloribus.
+        </p>
+        <img src="./img/ford mustang.jpg" alt="ford mustang">
+    </div>
+    <div class="box-normal">
+        <h2>Normal Grid</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, quisquam beatae tempore repellat sapiente
+            eaque est vero nam
+        </p>
+        <img src="./img/ford mustang.jpg" alt="ford mustang">
+    </div>
+    <div class="box-normal">
+        <h2>Normal Grid</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <img src="./img/ford mustang.jpg" alt="ford mustang">
+    </div>
+    <div class="box-normal">
+        <h2>Normal Grid</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, quisquam beatae tempore repellat sapiente
+            eaque est vero nam mollitia aperiam fugiat! Perspiciatis doloribus, earum eveniet alias consequuntur,
+        </p>
+        <img src="./img/ford mustang.jpg" alt="ford mustang">
+    </div>
+</div>
+
+<div class="wrapper-subgrid">
+    <div class="box-subgrid">
+        <h2>Sub Grid</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, quisquam beatae tempore repellat sapiente
+            eaque est vero nam mollitia aperiam fugiat! Perspiciatis doloribus.
+        </p>
+        <img src="./img/ford mustang.jpg" alt="ford mustang">
+    </div>
+    <div class="box-subgrid">
+        <h2>Sub Grid</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, quisquam beatae tempore repellat sapiente
+            eaque est vero nam
+        </p>
+        <img src="./img/ford mustang.jpg" alt="ford mustang">
+    </div>
+    <div class="box-subgrid">
+        <h2>Sub Grid</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <img src="./img/ford mustang.jpg" alt="ford mustang">
+    </div>
+    <div class="box-subgrid">
+        <h2>Sub Grid</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, quisquam beatae tempore repellat sapiente
+            eaque est vero nam mollitia aperiam fugiat! Perspiciatis doloribus, earum eveniet alias consequuntur,
+        </p>
+        <img src="./img/ford mustang.jpg" alt="ford mustang">
+    </div>
+</div>
+
+</html>
