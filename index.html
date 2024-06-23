@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="darkreader-lock">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Small Projects</title>
+</head>
+
+<body class="bg-[#212121] text-white">
+    <div class="flex flex-col justify-center items-center w-full p-8">
+        <h1 class="text-2xl my-4 font-serif">
+            <a href="https://github.com/nithinK-142/small-projects" target="_blank">Small Projects</a>
+        </h1>
+        <div id="projectList" class="w-[18rem] font-sans"></div>
+    </div>
+
+    <script>
+        const projects = [
+            { name: "Color Palette", path: "color-palette" },
+            { name: "Contact us", path: "contact-us" },
+            { name: "Fake Store", path: "fake-store-api" },
+            { name: "Grid Layout", path: "grid-layout" },
+            { name: "Password Eye", path: "password-eye" },
+            { name: "Responsive Navbar", path: "responsive-navbar" },
+            { name: "Scroll Bar", path: "scroll-bar" },
+            { name: "Scroll to Top", path: "scroll-to-top" },
+            { name: "Text to Speech", path: "text-to-speech" },
+            { name: "TMDB Movies", path: "tmdb-movies" }
+        ];
+
+        function createProjectLink(project) {
+            return `
+                <div class="flex justify-between items-center w-full py-1 pb-1.5 px-4 my-4 border border-white/30 hover:border-white transition-colors duration-500 rounded-md group">
+                    <h2 class="text-base group-hover:tracking-wide transition-all duration-300">${project.name}</h2>
+                    <a href="./${project.path}/index.html" target="_blank"
+                        class="flex items-center space-x-1 group-hover:text-blue-500 transition-colors duration-500">
+                        <span class="italic">link</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-link">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                    </a>
+                </div>
+            `;
+        }
+
+        document.getElementById('projectList').innerHTML = projects.map(createProjectLink).join('');
+    </script>
+</body>
+
+</html>
